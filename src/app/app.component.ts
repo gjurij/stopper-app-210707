@@ -21,18 +21,12 @@ export class AppComponent {
         } else {
           this.counter++;
         }
-    }, 0.1);
+      }, 0.1);
       this.isStarted= true;
     } else {
       clearInterval(this.interval);
       this.isStarted= false;
     }
-    
-
-  }
-  pauseTimer() {
-    clearInterval(this.interval);
-    this.isStarted= false;
   }
 
   resetStopper(){

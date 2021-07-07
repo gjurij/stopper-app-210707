@@ -1,7 +1,7 @@
 <h1>{{title}}</h1>
 
 
-<button (click)='startPauseStopper()'>Start/Pause</button>
+<button mat-button (click)='startPauseStopper()'>Start/Pause</button>
 <button (click)='resetStopper()'>Reset</button>
 <button (click)='addStep()'>Step</button>
 
@@ -10,4 +10,3 @@
 <ul>
     <li *ngFor='let it of timeStepList'>{{it | date:'mm:ss:SS'}}</li>
 </ul>
-
