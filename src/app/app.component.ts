@@ -16,11 +16,7 @@ export class AppComponent {
   startPauseStopper() {
     if (!this.isStarted){
       this.interval = setInterval(() => {
-        if (this.counter === 0) {
           this.counter++;
-        } else {
-          this.counter++;
-        }
       }, 0.1);
       this.isStarted= true;
     } else {
